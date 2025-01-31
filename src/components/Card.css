@@ -1,0 +1,14 @@
+.Card {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%) rotate(calc(var(--rotation) * 1deg));
+  transition: transform 0.3s ease;
+  width: 150px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

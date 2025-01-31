@@ -1,0 +1,11 @@
+body {
+  background-color: green;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items closer to the top */
+  height: 100vh;
+  padding-top: 20px; /* Add some padding to the top */
+}

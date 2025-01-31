@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import DrawCard from "./DrawCard";
+import "./Deck.css";
+
+const API_BASE_URL = "https://deckofcardsapi.com/api/deck";
 
 function Deck() {
-  const API_BASE_URL = "https://deckofcardsapi.com/api/deck";
-
   const [deck, setDeck] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -42,7 +43,7 @@ function Deck() {
 
   return (
     <div className="Deck">
-      <button onClick={shuffleDeck} disabled={shuffling}>
+      <button className="Deck-gimme" onClick={shuffleDeck} disabled={shuffling}>
         {shuffling ? "Shuffling..." : "Shuffle"}
       </button>
       <DrawCard
